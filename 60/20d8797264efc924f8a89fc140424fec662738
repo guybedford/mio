@@ -1,0 +1,19 @@
+.github/workflows/ci.yml
+  s_f9c249788c22e6::t_ff5633064e61a9 108
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "6020d8797264efc924f8a89fc140424fec662738",
+  "prompts": {},
+  "sessions": {
+    "s_f9c249788c22e6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_06a75c3f2ffeoNxhkih0iWP1R3",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Guy Bedford <gbedford@cloudflare.com>"
+    }
+  }
+}
