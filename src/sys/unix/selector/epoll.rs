@@ -35,7 +35,13 @@ impl Selector {
     }
 
     pub fn try_clone(&self) -> io::Result<Selector> {
-        self.ep.try_clone().map(|ep| Selector {
+        // `OwnedFd::try_clone` is unsupported on emscripten before Rust 1.99.
+        #[cfg(target_os = "emscripten")]
+        let ep = syscall!(fcntl(self.ep.as_raw_fd(), libc::F_DUPFD_CLOEXEC, 3))
+            .map(|fd| unsafe { OwnedFd::from_raw_fd(fd) });
+        #[cfg(not(target_os = "emscripten"))]
+        let ep = self.ep.try_clone();
+        ep.map(|ep| Selector {
             // It's the same selector, so we use the same id.
             #[cfg(debug_assertions)]
             id: self.id,
