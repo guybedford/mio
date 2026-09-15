@@ -1,0 +1,39 @@
+Cargo.toml
+  s_207b36b1cbd644::t_005d900c7dd9cf 50
+tests/poll.rs
+  s_f07a762401bdf5::t_d6d3e0697bd984 124,175,181
+tests/regressions.rs
+  s_f07a762401bdf5::t_ce669b8a21dd8a 13,26,32,112
+tests/tcp.rs
+  s_f07a762401bdf5::t_d1eb56bfd185b1 116,194,253,318,322,447,454,619,709
+tests/tcp_stream.rs
+  s_f07a762401bdf5::t_55a92ffd666ed1 19,21,467-470,643,734,818,821,862,945,984,1031,1071
+tests/unix_stream.rs
+  s_f07a762401bdf5::t_d262b59a53c4a9 16,27,57,149-150,622,630,675
+tests/util/mod.rs
+  s_f07a762401bdf5::t_e46794013a686f 211-283,300,318-322
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "56d18870fb6b45a89defdba9e4b56e6c4c7f2c57",
+  "prompts": {},
+  "sessions": {
+    "s_207b36b1cbd644": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fe8c2336bffeXIk437zox6t1nQ",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Guy Bedford <gbedford@cloudflare.com>"
+    },
+    "s_f07a762401bdf5": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f5a0bf1d2ffeJ6Hf8o5yJW3MdK",
+        "model": "claude-fable-5-1"
+      },
+      "human_author": "Guy Bedford <gbedford@cloudflare.com>"
+    }
+  }
+}
