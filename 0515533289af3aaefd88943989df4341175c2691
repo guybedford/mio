@@ -1,0 +1,19 @@
+src/sys/unix/selector/epoll.rs
+  s_ff70e1c14036f5::t_0f68ba539606eb 38-44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "0515533289af3aaefd88943989df4341175c2691",
+  "prompts": {},
+  "sessions": {
+    "s_ff70e1c14036f5": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f7c5c82cbffe5cc4W9mBDxVZVU",
+        "model": "claude-fable-5-1"
+      },
+      "human_author": "Guy Bedford <gbedford@cloudflare.com>"
+    }
+  }
+}
